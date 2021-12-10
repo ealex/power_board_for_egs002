@@ -31,7 +31,7 @@ U 1 1 61AF9354
 P 1300 850
 F 0 "F11" H 1300 1035 50  0000 C CNN
 F 1 "Fuse_Small" H 1300 944 50  0000 C CNN
-F 2 "" H 1300 850 50  0001 C CNN
+F 2 "power_board_for_egs002:696101000002" H 1300 850 50  0001 C CNN
 F 3 "~" H 1300 850 50  0001 C CNN
 	1    1300 850 
 	1    0    0    -1  
@@ -42,7 +42,7 @@ U 1 1 61AF9B1D
 P 1300 1850
 F 0 "F12" H 1300 2035 50  0000 C CNN
 F 1 "Fuse_Small" H 1300 1944 50  0000 C CNN
-F 2 "" H 1300 1850 50  0001 C CNN
+F 2 "power_board_for_egs002:696101000002" H 1300 1850 50  0001 C CNN
 F 3 "~" H 1300 1850 50  0001 C CNN
 	1    1300 1850
 	1    0    0    -1  
@@ -57,7 +57,7 @@ U 1 1 61AFB809
 P 1300 3400
 F 0 "F13" H 1300 3585 50  0000 C CNN
 F 1 "Fuse_Small" H 1300 3494 50  0000 C CNN
-F 2 "" H 1300 3400 50  0001 C CNN
+F 2 "power_board_for_egs002:696101000002" H 1300 3400 50  0001 C CNN
 F 3 "~" H 1300 3400 50  0001 C CNN
 	1    1300 3400
 	1    0    0    -1  
@@ -104,25 +104,25 @@ Wire Wire Line
 Text Label 1550 1850 0    50   ~ 0
 +12V_RAW
 $Comp
-L Device:C_Small C?
+L Device:C_Small C17
 U 1 1 61B06B90
 P 6700 1050
-F 0 "C?" H 6792 1096 50  0000 L CNN
-F 1 "C_Small" H 6792 1005 50  0000 L CNN
-F 2 "" H 6700 1050 50  0001 C CNN
+F 0 "C17" H 6792 1096 50  0000 L CNN
+F 1 "MCKSK050M222J36S" H 6792 1005 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D16.0mm_P7.50mm" H 6700 1050 50  0001 C CNN
 F 3 "~" H 6700 1050 50  0001 C CNN
 	1    6700 1050
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C18
 U 1 1 61B0757A
-P 7350 1050
-F 0 "C?" H 7442 1096 50  0000 L CNN
-F 1 "C_Small" H 7442 1005 50  0000 L CNN
-F 2 "" H 7350 1050 50  0001 C CNN
-F 3 "~" H 7350 1050 50  0001 C CNN
-	1    7350 1050
+P 7800 1050
+F 0 "C18" H 7892 1096 50  0000 L CNN
+F 1 "MCKSK050M222J36S" H 7892 1005 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D16.0mm_P7.50mm" H 7800 1050 50  0001 C CNN
+F 3 "~" H 7800 1050 50  0001 C CNN
+	1    7800 1050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -156,23 +156,23 @@ Wire Wire Line
 Wire Wire Line
 	4150 1850 4300 1850
 $Comp
-L Device:C_Small C?
+L Device:C_Small C11
 U 1 1 61B0C891
 P 3000 2050
-F 0 "C?" H 3092 2096 50  0000 L CNN
-F 1 "470u" H 3092 2005 50  0000 L CNN
-F 2 "" H 3000 2050 50  0001 C CNN
+F 0 "C11" H 2850 2150 50  0000 L CNN
+F 1 "B41858C5477M000" H 2200 1950 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D16.0mm_P7.50mm" H 3000 2050 50  0001 C CNN
 F 3 "~" H 3000 2050 50  0001 C CNN
 	1    3000 2050
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C12
 U 1 1 61B0CF2E
 P 3400 2050
-F 0 "C?" H 3492 2096 50  0000 L CNN
+F 0 "C12" H 3492 2096 50  0000 L CNN
 F 1 "100n" H 3492 2005 50  0000 L CNN
-F 2 "" H 3400 2050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3400 2050 50  0001 C CNN
 F 3 "~" H 3400 2050 50  0001 C CNN
 	1    3400 2050
 	1    0    0    -1  
@@ -213,23 +213,23 @@ Wire Wire Line
 Text Label 4550 1850 0    50   ~ 0
 +12V_REG
 $Comp
-L Device:C_Small C?
+L Device:C_Small C13
 U 1 1 61B125FF
 P 5100 2050
-F 0 "C?" H 5192 2096 50  0000 L CNN
+F 0 "C13" H 5192 2096 50  0000 L CNN
 F 1 "220u" H 5192 2005 50  0000 L CNN
-F 2 "" H 5100 2050 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D16.0mm_P7.50mm" H 5100 2050 50  0001 C CNN
 F 3 "~" H 5100 2050 50  0001 C CNN
 	1    5100 2050
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C14
 U 1 1 61B12609
 P 5500 2050
-F 0 "C?" H 5592 2096 50  0000 L CNN
+F 0 "C14" H 5592 2096 50  0000 L CNN
 F 1 "100n" H 5592 2005 50  0000 L CNN
-F 2 "" H 5500 2050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5500 2050 50  0001 C CNN
 F 3 "~" H 5500 2050 50  0001 C CNN
 	1    5500 2050
 	1    0    0    -1  
@@ -317,23 +317,23 @@ Wire Wire Line
 	6350 3400 7000 3400
 Connection ~ 6350 3400
 $Comp
-L Device:C_Small C?
+L Device:C_Small C15
 U 1 1 61B21AB9
 P 7550 3600
-F 0 "C?" H 7642 3646 50  0000 L CNN
-F 1 "470u" H 7642 3555 50  0000 L CNN
-F 2 "" H 7550 3600 50  0001 C CNN
+F 0 "C15" H 7642 3646 50  0000 L CNN
+F 1 "220u" H 7642 3555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D16.0mm_P7.50mm" H 7550 3600 50  0001 C CNN
 F 3 "~" H 7550 3600 50  0001 C CNN
 	1    7550 3600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C16
 U 1 1 61B21AC3
 P 7950 3600
-F 0 "C?" H 8042 3646 50  0000 L CNN
+F 0 "C16" H 8042 3646 50  0000 L CNN
 F 1 "100n" H 8042 3555 50  0000 L CNN
-F 2 "" H 7950 3600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7950 3600 50  0001 C CNN
 F 3 "~" H 7950 3600 50  0001 C CNN
 	1    7950 3600
 	1    0    0    -1  
@@ -369,10 +369,10 @@ Connection ~ 7950 3400
 Wire Wire Line
 	7950 3400 10650 3400
 $Comp
-L Diode:1N4007 D?
+L Diode:1N4007 D13
 U 1 1 61B2517A
 P 7000 2500
-F 0 "D?" V 6954 2421 50  0000 R CNN
+F 0 "D13" V 6954 2421 50  0000 R CNN
 F 1 "1N4007" V 7045 2421 50  0000 R CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7000 2325 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7000 2500 50  0001 C CNN
@@ -418,25 +418,25 @@ $EndComp
 Text Notes 1950 7650 0    71   ~ 14
 Power supply configuration\n\n1. 3 individual power supplies\n    - remove bridge between J11 and J12\n    - bridge between J13 pin 1 and J13 pin 3\n    - remove the 5V regulator in J14\n\n2. Common +HV and +12V, independent 5V\n    - bridge J11 and J12\n    - bridge between J13 pin 1 and J13 pin 3\n    - remove the 5V regulator in J14\n    - ideally keep +12 as a separate wire to reduce voltage drop\n\n3. Common +HV and 12V, +5V from local regulator:\n    - +HV must not exceed 16V (VGS breakdown)\n    - bridge J11 and J12\n    - bridge between J13 pin 1 and J13 pin 3\n    - add +5V regulator in J14\n    - ideally keep +12 as a separate wire to reduce voltage drop\n\n4. HV only, +12V and +5V from local regulators\n    - bridge J11 and J12\n    - add +12V regulator in J13\n    - add +5V regulator in J14\n\n5. Independent HV and 12V, +5V from local regulator:\n    - remove bridge between J11 and J12\n    - bridge between J13 pin 1 and J13 pin 3\n    - add +5V regulator in J14\n\n6. Independent HV, unregulated +12V, +5V from local regulator\n    - remove bridge between J11 and J12\n    - add +12V regulator in J13\n    - add +5V regulator in J14
 $Comp
-L Device:C_Small C?
+L Device:C_Small C19
 U 1 1 61B48085
-P 7950 1050
-F 0 "C?" H 8042 1096 50  0000 L CNN
-F 1 "C_Small" H 8042 1005 50  0000 L CNN
-F 2 "" H 7950 1050 50  0001 C CNN
-F 3 "~" H 7950 1050 50  0001 C CNN
-	1    7950 1050
+P 9300 1050
+F 0 "C19" H 9392 1096 50  0000 L CNN
+F 1 "100n" H 9392 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 9300 1050 50  0001 C CNN
+F 3 "~" H 9300 1050 50  0001 C CNN
+	1    9300 1050
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C110
 U 1 1 61B4844A
-P 8500 1050
-F 0 "C?" H 8592 1096 50  0000 L CNN
-F 1 "C_Small" H 8592 1005 50  0000 L CNN
-F 2 "" H 8500 1050 50  0001 C CNN
-F 3 "~" H 8500 1050 50  0001 C CNN
-	1    8500 1050
+P 10000 1050
+F 0 "C110" H 10092 1096 50  0000 L CNN
+F 1 "100n" H 10092 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 10000 1050 50  0001 C CNN
+F 3 "~" H 10000 1050 50  0001 C CNN
+	1    10000 1050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -453,64 +453,64 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 61B4AC51
-P 7350 1250
-F 0 "#PWR?" H 7350 1000 50  0001 C CNN
-F 1 "GND" H 7355 1077 50  0000 C CNN
-F 2 "" H 7350 1250 50  0001 C CNN
-F 3 "" H 7350 1250 50  0001 C CNN
-	1    7350 1250
+P 7800 1250
+F 0 "#PWR?" H 7800 1000 50  0001 C CNN
+F 1 "GND" H 7805 1077 50  0000 C CNN
+F 2 "" H 7800 1250 50  0001 C CNN
+F 3 "" H 7800 1250 50  0001 C CNN
+	1    7800 1250
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 61B4B0FC
-P 7950 1250
-F 0 "#PWR?" H 7950 1000 50  0001 C CNN
-F 1 "GND" H 7955 1077 50  0000 C CNN
-F 2 "" H 7950 1250 50  0001 C CNN
-F 3 "" H 7950 1250 50  0001 C CNN
-	1    7950 1250
+P 9300 1250
+F 0 "#PWR?" H 9300 1000 50  0001 C CNN
+F 1 "GND" H 9305 1077 50  0000 C CNN
+F 2 "" H 9300 1250 50  0001 C CNN
+F 3 "" H 9300 1250 50  0001 C CNN
+	1    9300 1250
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 61B4B3AB
-P 8500 1250
-F 0 "#PWR?" H 8500 1000 50  0001 C CNN
-F 1 "GND" H 8505 1077 50  0000 C CNN
-F 2 "" H 8500 1250 50  0001 C CNN
-F 3 "" H 8500 1250 50  0001 C CNN
-	1    8500 1250
+P 10000 1250
+F 0 "#PWR?" H 10000 1000 50  0001 C CNN
+F 1 "GND" H 10005 1077 50  0000 C CNN
+F 2 "" H 10000 1250 50  0001 C CNN
+F 3 "" H 10000 1250 50  0001 C CNN
+	1    10000 1250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8500 1250 8500 1150
+	10000 1250 10000 1150
 Wire Wire Line
-	7950 1250 7950 1150
+	9300 1250 9300 1150
 Wire Wire Line
-	7950 850  7950 950 
-Connection ~ 7950 850 
+	9300 850  9300 950 
 Wire Wire Line
-	7950 850  8500 850 
+	10000 950  10000 850 
 Wire Wire Line
-	8500 950  8500 850 
-Connection ~ 8500 850 
-Wire Wire Line
-	8500 850  10650 850 
-Wire Wire Line
-	7350 950  7350 850 
+	7800 950  7800 850 
 Wire Wire Line
 	2150 850  6700 850 
-Connection ~ 7350 850 
-Wire Wire Line
-	7350 850  7950 850 
 Wire Wire Line
 	6700 950  6700 850 
 Connection ~ 6700 850 
 Wire Wire Line
-	6700 850  7350 850 
-Wire Wire Line
 	6700 1150 6700 1250
 Wire Wire Line
-	7350 1150 7350 1250
+	7800 1150 7800 1250
+Connection ~ 10000 850 
+Wire Wire Line
+	10000 850  10650 850 
+Connection ~ 7800 850 
+Wire Wire Line
+	7800 850  9300 850 
+Wire Wire Line
+	6700 850  7800 850 
+Connection ~ 9300 850 
+Wire Wire Line
+	9300 850  10000 850 
 $EndSCHEMATC
