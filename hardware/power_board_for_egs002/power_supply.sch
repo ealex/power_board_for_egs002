@@ -26,23 +26,6 @@ Text HLabel 950  3400 0    50   Input ~ 0
 Text HLabel 950  850  0    50   Input ~ 0
 +HV_IN
 $Comp
-L Device:Fuse_Small F11
-U 1 1 61AF9354
-P 1300 850
-F 0 "F11" H 1300 1035 50  0000 C CNN
-F 1 "Fuse_Small" H 1300 944 50  0000 C CNN
-F 2 "power_board_for_egs002:696101000002" H 1300 850 50  0001 C CNN
-F 3 "~" H 1300 850 50  0001 C CNN
-	1    1300 850 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	950  850  1200 850 
-Wire Wire Line
-	1400 850  2150 850 
-Text Label 1550 850  0    50   ~ 0
-+HV_RAW
-$Comp
 L Connector_Generic:Conn_01x01 J11
 U 1 1 61AFD505
 P 2450 1100
@@ -485,4 +468,6 @@ Wire Wire Line
 	950  3400 6350 3400
 Wire Wire Line
 	950  1850 2150 1850
+Wire Wire Line
+	950  850  2150 850 
 $EndSCHEMATC
