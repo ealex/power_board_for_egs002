@@ -1,0 +1,343 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 2750 1250 1200 450 
+U 61AF7514
+F0 "PowerSupply" 50
+F1 "power_supply.sch" 50
+F2 "+12V_OUT" O R 3950 1450 50 
+F3 "+5V_OUT" O R 3950 1550 50 
+F4 "+HV_OUT" O R 3950 1350 50 
+F5 "+12V_IN" I L 2750 1450 50 
+F6 "+5V_IN" I L 2750 1550 50 
+F7 "+HV_IN" I L 2750 1350 50 
+$EndSheet
+$Sheet
+S 6200 1400 1150 1750
+U 61AF7571
+F0 "PowerBoard" 50
+F1 "powerBoard.sch" 50
+F2 "2_HO" I L 6200 1800 50 
+F3 "2_VS" B L 6200 1900 50 
+F4 "2_LO" I L 6200 2000 50 
+F5 "1_VS" B L 6200 2300 50 
+F6 "1_LO" I L 6200 2400 50 
+F7 "1_HO" I L 6200 2200 50 
+F8 "V_FB" O L 6200 2600 50 
+F9 "I_FB" O L 6200 2700 50 
+F10 "T_FB" O L 6200 2800 50 
+F11 "FAN_CTR" I L 6200 3000 50 
+F12 "BRIDGE_OUT_2" O R 7350 2300 50 
+F13 "BRIDGE_OUT_1" O R 7350 2400 50 
+F14 "HV_IN" I L 6200 1500 50 
+F15 "NTC_5V" I L 6200 1600 50 
+F16 "HV_SENSE_L" I R 7350 1500 50 
+F17 "HV_SENSE_N" I R 7350 1600 50 
+$EndSheet
+$Comp
+L power_board_for_egs002:EGS002 U1
+U 1 1 61AF7641
+P 4750 1800
+F 0 "U1" H 5100 2065 50  0000 C CNN
+F 1 "EGS002" H 5100 1974 50  0000 C CNN
+F 2 "power_board_for_egs002:EGS002" H 4950 450 50  0001 C CNN
+F 3 "" H 4950 450 50  0001 C CNN
+	1    4750 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 61B554F8
+P 850 950
+F 0 "J1" H 768 1167 50  0000 C CNN
+F 1 "+HV" H 768 1076 50  0000 C CNN
+F 2 "power_board_for_egs002:conn_5.08" H 850 950 50  0001 C CNN
+F 3 "~" H 850 950 50  0001 C CNN
+	1    850  950 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 61B55BA7
+P 850 1750
+F 0 "J2" H 768 1967 50  0000 C CNN
+F 1 "+12V" H 768 1876 50  0000 C CNN
+F 2 "power_board_for_egs002:conn_5.08" H 850 1750 50  0001 C CNN
+F 3 "~" H 850 1750 50  0001 C CNN
+	1    850  1750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 61B55DD1
+P 850 2600
+F 0 "J3" H 768 2817 50  0000 C CNN
+F 1 "+5V" H 768 2726 50  0000 C CNN
+F 2 "power_board_for_egs002:conn_2.54" H 850 2600 50  0001 C CNN
+F 3 "~" H 850 2600 50  0001 C CNN
+	1    850  2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 61B5629D
+P 1100 1100
+F 0 "#PWR0101" H 1100 850 50  0001 C CNN
+F 1 "GND" H 1105 927 50  0000 C CNN
+F 2 "" H 1100 1100 50  0001 C CNN
+F 3 "" H 1100 1100 50  0001 C CNN
+	1    1100 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 1050 1100 1050
+Wire Wire Line
+	1100 1050 1100 1100
+$Comp
+L power:GND #PWR0102
+U 1 1 61B56F10
+P 1100 1900
+F 0 "#PWR0102" H 1100 1650 50  0001 C CNN
+F 1 "GND" H 1105 1727 50  0000 C CNN
+F 2 "" H 1100 1900 50  0001 C CNN
+F 3 "" H 1100 1900 50  0001 C CNN
+	1    1100 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 61B5849A
+P 1100 2750
+F 0 "#PWR0103" H 1100 2500 50  0001 C CNN
+F 1 "GND" H 1105 2577 50  0000 C CNN
+F 2 "" H 1100 2750 50  0001 C CNN
+F 3 "" H 1100 2750 50  0001 C CNN
+	1    1100 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 1850 1100 1850
+Wire Wire Line
+	1100 1850 1100 1900
+Wire Wire Line
+	1050 2700 1100 2700
+Wire Wire Line
+	1100 2700 1100 2750
+$Comp
+L power:GND #PWR0104
+U 1 1 61B5B492
+P 4550 2950
+F 0 "#PWR0104" H 4550 2700 50  0001 C CNN
+F 1 "GND" H 4555 2777 50  0000 C CNN
+F 2 "" H 4550 2950 50  0001 C CNN
+F 3 "" H 4550 2950 50  0001 C CNN
+	1    4550 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2950 4550 2500
+Wire Wire Line
+	4550 2100 4650 2100
+Wire Wire Line
+	4650 2200 4550 2200
+Connection ~ 4550 2200
+Wire Wire Line
+	4550 2200 4550 2100
+Wire Wire Line
+	4650 2300 4550 2300
+Connection ~ 4550 2300
+Wire Wire Line
+	4550 2300 4550 2200
+Wire Wire Line
+	4650 2400 4550 2400
+Connection ~ 4550 2400
+Wire Wire Line
+	4550 2400 4550 2300
+Wire Wire Line
+	4650 2500 4550 2500
+Connection ~ 4550 2500
+Wire Wire Line
+	4550 2500 4550 2400
+Wire Wire Line
+	3950 1550 4100 1550
+Wire Wire Line
+	4100 1550 4100 1900
+Wire Wire Line
+	4100 1900 4650 1900
+Wire Wire Line
+	3950 1450 4200 1450
+Wire Wire Line
+	4200 1450 4200 1800
+Wire Wire Line
+	4200 1800 4650 1800
+Wire Wire Line
+	1050 950  2200 950 
+Wire Wire Line
+	2200 950  2200 1350
+Wire Wire Line
+	2200 1350 2750 1350
+Wire Wire Line
+	1050 1750 2050 1750
+Wire Wire Line
+	2050 1750 2050 1450
+Wire Wire Line
+	2050 1450 2750 1450
+Wire Wire Line
+	1050 2600 2150 2600
+Wire Wire Line
+	2150 2600 2150 1550
+Wire Wire Line
+	2150 1550 2750 1550
+Wire Wire Line
+	5550 1800 6200 1800
+Wire Wire Line
+	5550 1900 6200 1900
+Wire Wire Line
+	5550 2000 6200 2000
+Wire Wire Line
+	5550 2200 6200 2200
+Wire Wire Line
+	5550 2300 6200 2300
+Wire Wire Line
+	6200 2400 5550 2400
+Wire Wire Line
+	5550 2600 6200 2600
+Wire Wire Line
+	6200 2700 5550 2700
+Wire Wire Line
+	5550 2800 6200 2800
+Wire Wire Line
+	6200 3000 5550 3000
+Wire Wire Line
+	7350 2300 8450 2300
+Wire Wire Line
+	7350 2400 8450 2400
+Wire Wire Line
+	3950 1350 6050 1350
+Wire Wire Line
+	6050 1350 6050 1500
+Wire Wire Line
+	6050 1500 6200 1500
+Wire Wire Line
+	4100 1550 4300 1550
+Wire Wire Line
+	4300 1550 4300 1450
+Wire Wire Line
+	4300 1450 5950 1450
+Wire Wire Line
+	5950 1450 5950 1600
+Wire Wire Line
+	5950 1600 6200 1600
+Connection ~ 4100 1550
+Text Notes 7500 2700 0    50   ~ 0
+Notice:\nBRIDGE_OUT_2 is LIVE\nBRIDGE_OUT_1 is NEUTRAL
+Wire Wire Line
+	8450 2300 8450 2250
+Wire Wire Line
+	8450 2250 8650 2250
+Wire Wire Line
+	8650 2450 8450 2450
+Wire Wire Line
+	8450 2450 8450 2400
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 62CE110A
+P 8850 1500
+F 0 "J6" H 8930 1492 50  0000 L CNN
+F 1 "HV_SENSE" H 8930 1401 50  0000 L CNN
+F 2 "power_board_for_egs002:conn_2.54" H 8850 1500 50  0001 C CNN
+F 3 "~" H 8850 1500 50  0001 C CNN
+	1    8850 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 1500 7350 1500
+Wire Wire Line
+	7350 1600 8650 1600
+$Comp
+L power_board_for_egs002:SK68-100SA U2
+U 1 1 61B3967E
+P 10400 650
+F 0 "U2" H 10628 546 50  0000 L CNN
+F 1 "SK68-100SA" H 10628 455 50  0000 L CNN
+F 2 "power_board_for_egs002:SK68-100SA" H 10400 650 50  0001 C CNN
+F 3 "" H 10400 650 50  0001 C CNN
+	1    10400 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 61B39DC2
+P 10200 1050
+F 0 "#PWR0105" H 10200 800 50  0001 C CNN
+F 1 "GND" H 10205 877 50  0000 C CNN
+F 2 "" H 10200 1050 50  0001 C CNN
+F 3 "" H 10200 1050 50  0001 C CNN
+	1    10200 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 1050 10200 950 
+Wire Wire Line
+	10200 650  10300 650 
+Wire Wire Line
+	10300 750  10200 750 
+Connection ~ 10200 750 
+Wire Wire Line
+	10200 750  10200 650 
+Wire Wire Line
+	10300 850  10200 850 
+Connection ~ 10200 850 
+Wire Wire Line
+	10200 850  10200 750 
+Wire Wire Line
+	10300 950  10200 950 
+Connection ~ 10200 950 
+Wire Wire Line
+	10200 950  10200 850 
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 61B47699
+P 8850 2150
+F 0 "J4" H 8930 2142 50  0000 L CNN
+F 1 "BRIGDE_OUT_2" H 8930 2051 50  0000 L CNN
+F 2 "power_board_for_egs002:conn_5.08" H 8850 2150 50  0001 C CNN
+F 3 "~" H 8850 2150 50  0001 C CNN
+	1    8850 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 61B47860
+P 8850 2450
+F 0 "J5" H 8930 2442 50  0000 L CNN
+F 1 "BRIGDE_OUT_1" H 8930 2351 50  0000 L CNN
+F 2 "power_board_for_egs002:conn_5.08" H 8850 2450 50  0001 C CNN
+F 3 "~" H 8850 2450 50  0001 C CNN
+	1    8850 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 2150 8450 2150
+Wire Wire Line
+	8450 2150 8450 2250
+Connection ~ 8450 2250
+Wire Wire Line
+	8650 2550 8450 2550
+Wire Wire Line
+	8450 2550 8450 2450
+Connection ~ 8450 2450
+$EndSCHEMATC
